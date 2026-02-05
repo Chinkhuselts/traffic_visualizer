@@ -25,15 +25,15 @@ This tool was designed to solve the challenge of analyzing massive server logs t
 
 ### 1. High-Bandwidth Analysis & Ingestion Logic
 The dashboard identifies top bandwidth consumers immediately. The interface displays the underlying ingestion logic, highlighting the chunk-based processing method.
-![Dashboard Overview](assets/streamlit_1.png)
+![Dashboard Overview](screenshots/streamlit_1.png)
 
 ### 2. Geospatial Intelligence
 Traffic sources are plotted on a dark-mode map, allowing security analysts to visually identify suspicious clusters of activity.
-![Map Visualization](assets/streamlit_2.png)
+![Map Visualization](screenshots/streamlit_2.png)
 
 ### 3. Traffic Distribution by Country
 Aggregated statistics show total data transfer volume per country.
-![Country Stats](assets/streamlit_3.png)
+![Country Stats](screenshots/streamlit_3.png)
 
 ---
 
@@ -85,3 +85,4 @@ for i, (index, row) in enumerate(top_ips.iterrows()):
     lat, lon, country = get_ip_location(row['source_ip'])
     time.sleep(0.5) # Respect API rate limits
 ```
+
